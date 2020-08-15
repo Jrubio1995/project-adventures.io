@@ -4,10 +4,49 @@ footer {
   width: 100%;
   height: 2.5rem;
 }
-
+.city-name {
+  margin-top: 50px;
+}
+#weather-box {
+  margin-left: 100px;
+}
 .column {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+#row1 {
+  margin-top: 40px;
+}
+
+#row2 {
+  margin-top: 200px;
+}
+.img1 {
+  max-width: 60%;
+  max-height: 60%;
+  margin-top: 15px;
+}
+.img2 {
+  max-width: 60%;
+  max-height: 60%;
+  margin-top: 25px;
+}
+.img3 {
+  max-width: 60%;
+  max-height: 60%;
+  margin-top: 25px;
+}
+.img4 {
+  max-width: 60%;
+  max-height: 60%;
+  margin-top: 25px;
+  margin-left: 60px;
+}
+.img5 {
+  max-width: 60%;
+  max-height: 60%;
+  margin-top: 25px;
+  margin-left: 60px;
 }
