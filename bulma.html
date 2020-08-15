@@ -64,7 +64,6 @@
               <option value="67.55°N 159.28°W">Kobuk Valley</option>
               <option value="60.97°N 153.42°W">Lake Clark</option>
               <option value="40.49°N 121.51°W">Lassen Volcanic</option>
-              <option value="37.18°N 86.10°W"></option>
               <option value="37.18°N 86.10°W">Mammoth Cave</option>
               <option value="37.18°N 108.49°W">Mesa Verde</option>
               <option value="46.85°N 121.75°W">Mount Rainier</option>
@@ -90,31 +89,122 @@
           </div>
         </div>
         <div class="control">
-          <button type="submit" class="button is-primary">Find</button>
+          <button type="submit" class="button is-primary">Look Up</button>
         </div>
       </div>
     </div>
+    
 
     <div class="columns mt-2">
-      <div class="column is-narrow">
-        <div class="box" style="width: 200px; height: 200px;">
-          <p class="title is-5">Narrow column</p>
-          <p class="subtitle">This column is only 200px wide.</p>
+      <div class="column is-narrow" id="current-weather">
+        <div class="box" id="weather-box" style="width: 400px; height: 300px;">
+          <p class="title is-4 has-text-centered">Today's forecast</p>
+          <h3 class="city-name" id="current-city"></h3>
+          <p>Temperature:<span class="current" id="temperature"></span></p>
+          <p>Humidity:<span class="current" id="humidity"></span></p>
+          <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+          <p>UV index:<span class="current" id="uv-index"></span></p>
+        </div>
+        <div class="images2">
+          <p class="img4"><img src="https://cdn.cnn.com/cnnnext/dam/assets/200630003555-yellowstone-national-park-file-full-169.jpg" alt="welcome"></p>
+          <p class="img5"><img src="https://www.nationalgeographic.com/content/dam/animals/2019/06/yellowstone/yellowstone-landscapes/yellowstone-usa-wildlife-park-11.ngsversion.1561142295638.adapt.1900.1.jpg" alt="" ></p>
         </div>
       </div>
       <div class="column">
         <div class="box" style="width: 800px; height: 500px;">
-          <p class="title is-8">Flexible column</p>
-          <p class="subtitle">
-            This column will take up the remaining space available.
+          <p class="title is-4 has-text-centered">Park</p>
+          <div class="columns">
+            <div class="column">
+              <p>Activites:</p> 
+            </div>
+            <div class="column">
+              <p>Amenities:</p> 
+            </div>
+            <div class="column">
+              <p>Campgrounds:</p> 
+            </div>
+            <div class="column">
+              <p>Topics:</p> 
+            </div>
+          </div>
           </p>
         </div>
         <div class="column ml-0">
-          <div class="box" style="width: 800px; height: 500px;"></div>
+          <div class="box" style="width: 800px; height: 500px;">
+            <p class="title is-4 has-text-centered">Weather</p>
+            <div class="columns" id="row1">
+              <div class="column">
+                <p id="fDate0"></p>
+                <p id="fImg0"></p>
+                <p>Temp:<span id="fTemp0"></span></p>
+                <p>Humidity:<span id="fHumidity0"></span></p>
+              </div>
+              <div class="column">
+                <p id="fDate0"></p>
+                <p id="fImg0"></p>
+                <p>Temp:<span id="fTemp0"></span></p>
+                <p>Humidity:<span id="fHumidity0"></span></p>
+              </div>
+              <div class="column">
+                <p id="fDate0"></p>
+                <p id="fImg0"></p>
+                <p>Temp:<span id="fTemp0"></span></p>
+                <p>Humidity:<span id="fHumidity0"></span></p>
+              </div>
+              <div class="column">
+                <p id="fDate0"></p>
+                <p id="fImg0"></p>
+                <p>Temp:<span id="fTemp0"></span></p>
+                <p>Humidity:<span id="fHumidity0"></span></p>
+              </div>
+              <div class="column">
+                <p id="fDate0"></p>
+                <p id="fImg0"></p>
+                <p>Temp:<span id="fTemp0"></span></p>
+                <p>Humidity:<span id="fHumidity0"></span></p>
+              </div>
+            </div>
+            <div class="columns" id="row2">
+              <div class="column">
+                <p id="fDate0"></p>
+                <p id="fImg0"></p>
+                <p>Temp:<span id="fTemp0"></span></p>
+                <p>Humidity:<span id="fHumidity0"></span></p>
+              </div>
+              <div class="column">
+                <p id="fDate0"></p>
+                <p id="fImg0"></p>
+                <p>Temp:<span id="fTemp0"></span></p>
+                <p>Humidity:<span id="fHumidity0"></span></p>
+              </div>
+              <div class="column">
+                <p id="fDate0"></p>
+                <p id="fImg0"></p>
+                <p>Temp:<span id="fTemp0"></span></p>
+                <p>Humidity:<span id="fHumidity0"></span></p>
+              </div>
+              <div class="column">
+                <p id="fDate0"></p>
+                <p id="fImg0"></p>
+                <p>Temp:<span id="fTemp0"></span></p>
+                <p>Humidity:<span id="fHumidity0"></span></p>
+              </div>
+              <div class="column">
+                <p id="fDate0"></p>
+                <p id="fImg0"></p>
+                <p>Temp:<span id="fTemp0"></span></p>
+                <p>Humidity:<span id="fHumidity0"></span></p>
+              </div>
+          </div>
         </div>
       </div>
     </div>
-
+    <div class="images">
+      <p class="img1"><img src="https://www.nationalgeographic.com/content/dam/travel/rights-exempt/Travel-2016/59-parks-52-weeks/north-cascades/north-cascades-national-park-picture-lake-mount-shuksan.jpg" alt="lake" ></p>
+      <p class="img2"> <img src="http://travel.home.sndimg.com/content/dam/images/travel/fullset/2015/01/08ET/top-10-wonders-west-yellowstone-national-park.jpg.rend.hgtvcom.1280.960.suffix/1491581132559.jpeg" alt="shine"></p>
+      <p class="img3"><img src="https://leonardepsteinphotography.files.wordpress.com/2011/11/img_2826.jpg" alt="clif"></p>
+    </div>
+  
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
@@ -130,5 +220,6 @@
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
