@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Adventures</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
@@ -16,210 +18,179 @@
     >
       <h1><strong>Fairweather Adventures</strong></h1>
     </header>
-    <div class="container">
-      <div class="field has-addons">
-        <div class="control is-expanded">
-          <div class="select is-fullwidth">
-            <select name="parks">
-              <option value="44.35°N 68.21°W">Acadia</option>
-              <option value="14.25°S 170.68°W">American Samoa</option>
-              <option value="38.68°N 109.57°W">Arches</option>
-              <option value="43.75°N 102.50°W">Badlands</option>
-              <option value="29.25°N 103.25°W">Big Bend</option>
-              <option value="25.65°N 80.08°W">Biscayne</option>
-              <option value="38.57°N 107.72°W"
-                >Black Canyon of the Gunnison</option
-              >
-              <option value="37.57°N 112.18°W">Bryce Canyon</option>
-              <option value="38.2°N 109.93°W">Canyonlands</option>
-              <option value="38.20°N 111.17°W">Capitol Reef</option>
-              <option value="32.17°N 104.44°W">Carlsbad Caverns</option>
-              <option value="34.01°N 119.42°W">Channel Islands</option>
-              <option value="33.78°N 80.78°W">Congaree</option>
-              <option value="42.94°N 122.1°W">Crater Lake</option>
-              <option value="41.24°N 81.55°W">Cuyahoga Valley</option>
-              <option value="36.24°N 116.82°W">Death Valley</option>
-              <option value="63.33°N 150.50°W">Denali</option>
-              <option value="24.63°N 82.87°W">Dry Tortugas</option>
-              <option value="25.32°N 80.93°W">Everglades</option>
-              <option value="67.78°N 153.30°W">Gates of the Arctic</option>
-              <option value="38.63°N 90.19°W">Gateway Arch</option>
-              <option value="48.80°N 114.00°W">Glacier</option>
-              <option value="58.50°N 137.00°W">Glacier Bay</option>
-              <option value="36.06°N 112.14°W">Grand Canyon</option>
-              <option value="43.73°N 110.80°W">Grand Teton</option>
-              <option value="8.98°N 114.30°W">Great Basin</option>
-              <option value="37.73°N 105.51°W">Great Sand Dunes</option>
-              <option value="35.68°N 83.53°W">Great Smoky Mountains</option>
-              <option value="31.92°N 104.87°W">Guadalupe Mountains</option>
-              <option value="20.72°N 156.17°W">Haleakalā</option>
-              <option value="19.38°N 155.20°W">Hawaiʻi Volcanoes</option>
-              <option value="34.51°N 93.05°W">Hot Springs</option>
-              <option value="41.6533°N 87.0524°W">Indiana Dunes</option>
-              <option value="48.10°N 88.55°W">Isle Royale</option>
-              <option value="33.79°N 115.90°W">Joshua Tree</option>
-              <option value="58.50°N 155.00°W">Katmai</option>
-              <option value="59.92°N 149.65°W">Kenai Fjords</option>
-              <option value="36.80°N 118.55°W">Kings Canyon</option>
-              <option value="67.55°N 159.28°W">Kobuk Valley</option>
-              <option value="60.97°N 153.42°W">Lake Clark</option>
-              <option value="40.49°N 121.51°W">Lassen Volcanic</option>
-              <option value="37.18°N 86.10°W">Mammoth Cave</option>
-              <option value="37.18°N 108.49°W">Mesa Verde</option>
-              <option value="46.85°N 121.75°W">Mount Rainier</option>
-              <option value="48.70°N 121.20°W">North Cascades</option>
-              <option value="47.97°N 123.50°W">Olympic</option>
-              <option value="35.07°N 109.78°W">Petrified Forest</option>
-              <option value="36.48°N 121.16°W">Pinnacles</option>
-              <option value="41.30°N 124.00°W">Redwood</option>
-              <option value="40.40°N 105.58°W">Rocky Mountain</option>
-              <option value="32.25°N 110.50°W">Saguaro</option>
-              <option value="36.43°N 118.68°W">Sequoia</option>
-              <option value="38.53°N 78.35°W">Shenandoah</option>
-              <option value="46.97°N 103.45°W">Theodore Roosevelt</option>
-              <option value="18.33°N 64.73°W">Virgin Islands</option>
-              <option value="48.50°N 92.88°W">Voyageurs</option>
-              <option value="32.78°N 106.17°W">White Sands</option>
-              <option value="43.57°N 103.48°W">Wind Cave</option>
-              <option value="61.00°N 142.00°W">Wrangell–St. Elias</option>
-              <option value="44.60°N 110.50°W">Yellowstone</option>
-              <option value="37.83°N 119.50°W">Yosemite</option>
-              <option value="37.30°N 113.05°W">Zion</option>
-            </select>
+    <div class="container is-fluid">
+    <div><div class="container">
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <div class="select is-fullwidth">
+              <select zipcode="parks">
+                <option value="04693">Maine, Acadia, 04693</option>
+                <option value="96799">Other, American Samoa, 96799</option>
+                <option value="84532">Utah, Arches, 84532</option>
+                <option value="57790">South Dakota, Badlands, 57790</option>
+                <option value="79834">Texas, Big Bend, 79834</option>
+                <option value="33149">Florida, Biscayne, 33149</option>
+                <option value="80757"
+                  >Colorado, Black Canyon of the Gunnison, 80757
+                </option>
+                <option value="84764">Utah, Bryce Canyon, 84764</option>
+                <option value="84532">Utah, Canyonlands, 84532</option>
+                <option value="84775">Utah, Capitol Reef, 84775</option>
+                <option value="88220">New Mexico, Carlsbad Caverns, 88220</option>
+                <option value="93035">California, Channel Islands, 93035</option>
+                <option value="29044">South Carolina, Congaree, 29044</option>
+                <option value="97604">Oregon, Crater Lake, 97604</option>
+                <option value="44262">Ohio, Cuyahoga Valley, 44264</option>
+                <option value="92328">California, Death Valley, 92328</option>
+                <option value="99755">Alaska, Denali, 99755</option>
+              </select>
+            </div>
+          </div>
+          <div class="control">
+            <button type="submit" class="button is-primary">Look Up</button>
           </div>
         </div>
-        <div class="control">
-          <button type="submit" class="button is-primary">Look Up</button>
-        </div>
-      </div>
-    </div>
     
-
-    <div class="columns mt-2">
-      <div class="column is-narrow" id="current-weather">
-        <div class="box" id="weather-box" style="width: 400px; height: 300px;">
-          <p class="title is-4 has-text-centered">Today's forecast</p>
-          <h3 class="city-name" id="current-city"></h3>
-          <p>Temperature:<span class="current" id="temperature"></span></p>
-          <p>Humidity:<span class="current" id="humidity"></span></p>
-          <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
-          <p>UV index:<span class="current" id="uv-index"></span></p>
+      <section class="section">
+        <div class="container py-4">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div class="box" id="weather-box" style="width: 400px; height: 300px;">
+                <p class="title is-4 has-text-centered">Today's forecast</p>
+                <h3 class="city-name" id="current-city"></h3>
+                <p>Temperature:<span class="current" id="temperature"></span></p>
+                <p>Humidity:<span class="current" id="humidity"></span></p>
+                <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                <p>UV index:<span class="current" id="uv-index"></span></p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box" style="width: 800px; height: 500px;">
+                <p class="title is-4 has-text-centered">Park</p>
+                <div class="columns">
+                  <div class="column">
+                    <p>Activites:</p> 
+                  </div>
+                  <div class="column">
+                    <p>Amenities:</p> 
+                  </div>
+                  <div class="column">
+                    <p>Campgrounds:</p> 
+                  </div>
+                  <div class="column">
+                    <p>Topics:</p> 
+                  </div>
+                </div>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6">
+          <div class="level">
+            <div class="box" id="move-right" style="width: 800px; height: 500px;">
+              <p class="title is-4 has-text-centered">Weather</p>
+              <div class="columns" id="row1">
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+              </div>
+              <div class="columns" id="row2">
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+            </div>
+          </div>
+          </div>
         </div>
-        <div class="images2">
-          <p class="img4"><img src="https://cdn.cnn.com/cnnnext/dam/assets/200630003555-yellowstone-national-park-file-full-169.jpg" alt="welcome"></p>
-          <p class="img5"><img src="https://www.nationalgeographic.com/content/dam/animals/2019/06/yellowstone/yellowstone-landscapes/yellowstone-usa-wildlife-park-11.ngsversion.1561142295638.adapt.1900.1.jpg" alt="" ></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="box" style="width: 800px; height: 500px;">
-          <p class="title is-4 has-text-centered">Park</p>
+      </section>
+    
+      <section class="section">
+        <div class="container has-text-centered">
           <div class="columns">
             <div class="column">
-              <p>Activites:</p> 
-            </div>
-            <div class="column">
-              <p>Amenities:</p> 
-            </div>
-            <div class="column">
-              <p>Campgrounds:</p> 
-            </div>
-            <div class="column">
-              <p>Topics:</p> 
-            </div>
-          </div>
-          </p>
-        </div>
-        <div class="column ml-0">
-          <div class="box" style="width: 800px; height: 500px;">
-            <p class="title is-4 has-text-centered">Weather</p>
-            <div class="columns" id="row1">
-              <div class="column">
-                <p id="fDate0"></p>
-                <p id="fImg0"></p>
-                <p>Temp:<span id="fTemp0"></span></p>
-                <p>Humidity:<span id="fHumidity0"></span></p>
-              </div>
-              <div class="column">
-                <p id="fDate0"></p>
-                <p id="fImg0"></p>
-                <p>Temp:<span id="fTemp0"></span></p>
-                <p>Humidity:<span id="fHumidity0"></span></p>
-              </div>
-              <div class="column">
-                <p id="fDate0"></p>
-                <p id="fImg0"></p>
-                <p>Temp:<span id="fTemp0"></span></p>
-                <p>Humidity:<span id="fHumidity0"></span></p>
-              </div>
-              <div class="column">
-                <p id="fDate0"></p>
-                <p id="fImg0"></p>
-                <p>Temp:<span id="fTemp0"></span></p>
-                <p>Humidity:<span id="fHumidity0"></span></p>
-              </div>
-              <div class="column">
-                <p id="fDate0"></p>
-                <p id="fImg0"></p>
-                <p>Temp:<span id="fTemp0"></span></p>
-                <p>Humidity:<span id="fHumidity0"></span></p>
-              </div>
-            </div>
-            <div class="columns" id="row2">
-              <div class="column">
-                <p id="fDate0"></p>
-                <p id="fImg0"></p>
-                <p>Temp:<span id="fTemp0"></span></p>
-                <p>Humidity:<span id="fHumidity0"></span></p>
-              </div>
-              <div class="column">
-                <p id="fDate0"></p>
-                <p id="fImg0"></p>
-                <p>Temp:<span id="fTemp0"></span></p>
-                <p>Humidity:<span id="fHumidity0"></span></p>
-              </div>
-              <div class="column">
-                <p id="fDate0"></p>
-                <p id="fImg0"></p>
-                <p>Temp:<span id="fTemp0"></span></p>
-                <p>Humidity:<span id="fHumidity0"></span></p>
-              </div>
-              <div class="column">
-                <p id="fDate0"></p>
-                <p id="fImg0"></p>
-                <p>Temp:<span id="fTemp0"></span></p>
-                <p>Humidity:<span id="fHumidity0"></span></p>
-              </div>
-              <div class="column">
-                <p id="fDate0"></p>
-                <p id="fImg0"></p>
-                <p>Temp:<span id="fTemp0"></span></p>
-                <p>Humidity:<span id="fHumidity0"></span></p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="images">
-      <p class="img1"><img src="https://www.nationalgeographic.com/content/dam/travel/rights-exempt/Travel-2016/59-parks-52-weeks/north-cascades/north-cascades-national-park-picture-lake-mount-shuksan.jpg" alt="lake" ></p>
+              <p class="img1"><img src="https://www.nationalgeographic.com/content/dam/travel/rights-exempt/Travel-2016/59-parks-52-weeks/north-cascades/north-cascades-national-park-picture-lake-mount-shuksan.jpg" alt="lake" ></p>
       <p class="img2"> <img src="http://travel.home.sndimg.com/content/dam/images/travel/fullset/2015/01/08ET/top-10-wonders-west-yellowstone-national-park.jpg.rend.hgtvcom.1280.960.suffix/1491581132559.jpeg" alt="shine"></p>
       <p class="img3"><img src="https://leonardepsteinphotography.files.wordpress.com/2011/11/img_2826.jpg" alt="clif"></p>
+            </div>
+            <div class="column">
+              <p class="img4"><img src="https://cdn.cnn.com/cnnnext/dam/assets/200630003555-yellowstone-national-park-file-full-169.jpg" alt="welcome"></p>
+              <p class="img5"><img src="https://www.nationalgeographic.com/content/dam/animals/2019/06/yellowstone/yellowstone-landscapes/yellowstone-usa-wildlife-park-11.ngsversion.1561142295638.adapt.1900.1.jpg" alt="" ></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <p>
+              <strong>Developers</strong> by
+              <a href="https://github.com/Jrubio1995/project-adventures.io"
+                >Alice Golter, Brock Ehnert, Foos Mahamud, Melanie Cisler, Jesus
+                Rubio</a
+              >
+            </p>
+            <p>
+              <strong>Bulma</strong> by
+              <a href="https://bulma.io/"> Jeremy Thomas</a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
-  
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Developers</strong> by
-          <a href="https://github.com/Jrubio1995/project-adventures.io"
-            >Alice Golter, Brock Ehnert, Foos Mahamud, Melanie Cisler, Jesus
-            Rubio</a
-          >
-        </p>
-        <p>
-          <strong>Bulma</strong> by
-          <a href="https://bulma.io/"> Jeremy Thomas</a>
-        </p>
-      </div>
-    </footer>
-    <script src="script.js"></script>
   </body>
 </html>
