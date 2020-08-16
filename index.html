@@ -1,11 +1,194 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <title>Adventures</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header
+      class="title has-text-centered has-background-black-bis has-text-white pb-4"
+    >
+      <h1><strong>Fairweather Adventures</strong></h1>
+    </header>
+    <div class="container is-fluid">
+    <div><div class="container">
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <div class="select is-fullwidth">
+              <select zipcode="parks">
+                <option value="54024" id="sacn">Wisconsin, Saint Croix National Scenic Riverway, 54024</option>
+                <option value="53528" id="iatr">Wisconsin, Ice Age National Scenic Trail, 53528</option>
+                <option value="54814" id="apis">Wisconsin, Apostle Islands National Lakeshore, 54814</option>
+                <option value="57747" id="wica">South Dakota, Wind Cave National Park, 57747</option>
+                <option value="57751" id="moru">South Dakota, Mount Rushmore National Memorial, 57751</option>
+                <option value="57567" id="mimi">South Dakota, Minuteman Missile National Historic Site, 57567</option>
+                <option value="57730" id="jeca">South Dakota, Jewel Cave National Monument,  57730</option>
+                <option value="57750" id="badl">South Dakota, Badlands National Park, 57750</option>
+                <option value="58645" id="thro">North Dakota, Theodore Roosevelt National Park, 58645</option>
+                <option value="58571" id="knri">North Dakota, Knife River Indian Villages National Historic Site, 58571</option>
+                <option value="58801" id="fous">North Dakota, Fort Union Trading Post National Historic Site, 58801</option>
+                <option value="56649" id="voya">Minnesota, Voyageurs National Park, 56649</option>
+                <option value="56164" id="pipe">Minnesota, Pipestone National Monument, 56164</option>
+                <option value="55101" id="miss">Minnesota, Mississippi National River & Recreation Area, 55101</option>
+                <option value="55605" id="grpo">Minnesota, Grand Portage National Monument, 55605</option>
+                <option value="52358" id="heho">Iowa, Herbert Hoover National Historic Site, 52358</option>
+                <option value="52146" id="efmo">Iowa, Effigy Mounds National Monument, 52146</option>
+              </select>
+            </div>
+          </div>
+          <div class="control">
+            <button type="submit" class="button is-primary">Look Up</button>
+          </div>
+        </div>
     
-</body>
+      <section class="section">
+        <div class="container py-4">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div class="box" id="weather-box" style="width: 400px; height: 300px;">
+                <p class="title is-4 has-text-centered">Today's forecast</p>
+                <h3 class="city-name" id="current-city"></h3>
+                <p>Temperature:<span class="current" id="temperature"></span></p>
+                <p>Humidity:<span class="current" id="humidity"></span></p>
+                <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                <p>UV index:<span class="current" id="uv-index"></span></p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box" style="width: 800px; height: 500px;">
+                <p class="title is-4 has-text-centered">Park</p>
+                <div class="columns">
+                  <div class="column">
+                    <p>Activites:</p> 
+                  </div>
+                  <div class="column">
+                    <p>Amenities:</p> 
+                  </div>
+                  <div class="column">
+                    <p>Campgrounds:</p> 
+                  </div>
+                  <div class="column">
+                    <p>Topics:</p> 
+                  </div>
+                </div>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6">
+          <div class="level">
+            <div class="box" id="move-right" style="width: 800px; height: 500px;">
+              <p class="title is-4 has-text-centered">Weather</p>
+              <div class="columns" id="row1">
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+              </div>
+              <div class="columns" id="row2">
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="column">
+                  <p id="fDate0"></p>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="section">
+        <div class="container has-text-centered">
+          <div class="columns">
+            <div class="column">
+              <p class="img1"><img src="https://www.nationalgeographic.com/content/dam/travel/rights-exempt/Travel-2016/59-parks-52-weeks/north-cascades/north-cascades-national-park-picture-lake-mount-shuksan.jpg" alt="lake" ></p>
+      <p class="img2"> <img src="http://travel.home.sndimg.com/content/dam/images/travel/fullset/2015/01/08ET/top-10-wonders-west-yellowstone-national-park.jpg.rend.hgtvcom.1280.960.suffix/1491581132559.jpeg" alt="shine"></p>
+      <p class="img3"><img src="https://leonardepsteinphotography.files.wordpress.com/2011/11/img_2826.jpg" alt="clif"></p>
+            </div>
+            <div class="column">
+              <p class="img4"><img src="https://cdn.cnn.com/cnnnext/dam/assets/200630003555-yellowstone-national-park-file-full-169.jpg" alt="welcome"></p>
+              <p class="img5"><img src="https://www.nationalgeographic.com/content/dam/animals/2019/06/yellowstone/yellowstone-landscapes/yellowstone-usa-wildlife-park-11.ngsversion.1561142295638.adapt.1900.1.jpg" alt="" ></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <p>
+              <strong>Developers</strong> by
+              <a href="https://github.com/Jrubio1995/project-adventures.io"
+                >Alice Golter, Brock Ehnert, Foos Mahamud, Melanie Cisler, Jesus
+                Rubio</a
+              >
+            </p>
+            <p>
+              <strong>Bulma</strong> by
+              <a href="https://bulma.io/"> Jeremy Thomas</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
